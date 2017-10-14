@@ -16,6 +16,8 @@ To analyse the complementarity of both methods, we provide the confusion matrixe
 
 ![Screenshot](https://github.com/edufonseca/DCASE2017-Task1-ASC/tree/master/figures/development_cnns.png)
 
+![Alt text](/figures/development_cnns.png?raw=true "Optional Title")
+
 
 
 
