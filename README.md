@@ -11,8 +11,10 @@ The paper presents a system that consists of the ensemble of two methods:
 To analyse the complementarity of both methods, we provide the confusion matrixes for each of them:
 
 ![alt text](/figures/development_gbm.png?raw=true "GBM")
+*image_caption_GBM*
 
 ![alt text](/figures/development_cnns.png?raw=true "CNN")
+*image_caption_CNN*
 
 
 
