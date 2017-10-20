@@ -21,3 +21,4 @@ To analyse the complementarity of both methods, we provide the confusion matrixe
 
 
 
+![alt text](figures/development_cnns.png)
