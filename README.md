@@ -10,13 +10,14 @@ The paper presents a system that consists of the ensemble of two methods:
 
 To analyse the complementarity of both methods, we provide the confusion matrixes for each of them:
 
-| ![Alt text](/figures/development_gbm.png?raw=true "GBM") |
+| ![Alt text](/figures/development_gbm.png?raw=true) |
 |:---:|
 | *Confusion matrix for the GBM evaluated on the development dataset.* |
 
-| ![alt text](/figures/development_cnns.png?raw=true "CNN") |
+| ![alt text](/figures/development_cnns.png?) |
 |:---:|
 | *Confusion matrix for the CNN evaluated on the development dataset.* |
+
 
 
 
