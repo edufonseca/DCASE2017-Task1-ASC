@@ -14,7 +14,7 @@ To analyse the complementarity of both methods, we provide the confusion matrixe
 |:---:|
 | *Confusion matrix for the GBM evaluated on the development dataset.* |
 
-| ![alt text](/figures/development_cnns.png?) |
+| ![alt text](/figures/development_cnns.png) |
 |:---:|
 | *Confusion matrix for the CNN evaluated on the development dataset.* |
 
