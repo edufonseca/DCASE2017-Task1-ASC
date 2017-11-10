@@ -8,7 +8,7 @@ The paper presents a system that consists of the ensemble of two methods:
 - Gradient Boosting Machine (GBM)
 - Convolutional Neural Network (CNN)
 
-Next, the results for each model on the _**development set**_ are presented briefly, along with some discussion. We use the provided cross-validation setup.
+Next, the results for each model on the _**development set**_ are presented along with some discussion (that is not included in the paper due to space reasons). We use the provided cross-validation setup.
 
 The GBM model attains 80.8% (an improvement of 6% over the MLP baseline) and the resulting confusion matrix yielded by this model can be seen in Fig 1.
 
