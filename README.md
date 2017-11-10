@@ -35,9 +35,9 @@ The plot of Fig 3 can be explained as follows. Along the **main diagonal**:
 - positive numbers illustrate that the GBM model achieves more correct predictions
 - negative numbers illustrate that the CNN model achieves more correct predictions
 
-The non-zero values along the diagonal indicate that each model appears to perform better for a determined set of acoustic scenes. For instance, the GBM model performs better in some transportation modes (e.g., bus, train and tram) and in some indoor-quiet enviroments (e.g., home and library). 
+The non-zero values along the diagonal indicate that each model appears to perform better for a determined set of acoustic scenes. For instance, the GBM model performs better in some transportation modes (e.g., bus, train and tram) and in some indoor-quiet enviroments (e.g., home and library). On the contrary, the CNN model is best performing at metro station and achieves slightly better predictions in some environmental contexts (e.g., beach and forest path) or public spaces (e.g., cafe/restaurant and grocery store). 
 
-On the contrary, the CNN model is best performing at metro station and achieves slightly better predictions in some environmental contexts (e.g., beach and forest path) or public spaces (e.g., cafe/restaurant and grocery store). These interesting results should be further analyzed to find out why a model specializes in recogniting a specific acoustic scene. If you have an idea or wish to start a discussion about it, do not hesitate to create and issue or mail me to eduardo.fonseca@upf.edu :)
+These interesting results should be further analyzed to find out why a model specializes in recogniting a specific set of acoustic scenes. If you have an idea or wish to start a discussion about it, do not hesitate to create and issue or mail me to eduardo.fonseca@upf.edu :)
 
 Then, **off the diagonal**: 
 - positive numbers illustrate that the GBM model presents greater confusion for the pairs of acoustic scenes
