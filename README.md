@@ -8,15 +8,51 @@ The paper presents a system that consists of the ensemble of two methods:
 - Gradient Boosting Machine (GBM)
 - Convolutional Neural Network (CNN)
 
-To analyse the complementarity of both methods, we provide the confusion matrixes for each of them:
+Next, the results for each model on the _**development set**_ are presented briefly, along with some discussion. We use the provided cross-validation setup.
 
-| ![alt text](/figures/development_gbm.png) |
-|:---:|
-| *Confusion matrix for the GBM evaluated on the development dataset.* |
+The GBM model attains 80.8% (an improvement of 6% over the MLP baseline) and the resulting confusion matrix yielded by this model can be seen in Fig 1.
 
-| ![alt text](/figures/development_cnns.png) |
+| ![alt text](/figures/development_gbm_mine.png) |
 |:---:|
-| *Confusion matrix for the CNN evaluated on the development dataset.* |
+| *Fig 1. Confusion matrix for the GBM evaluated on the development dataset.* |
+
+
+The CNN model attains 79.9% (an improvement of 5.1% over the MLP baseline) and the resulting confusion matrix yielded by this model can be seen in Fig 2.
+
+| ![alt text](/figures/development_cnns_mine.png) |
+|:---:|
+| *Fig 2. Confusion matrix for the CNN evaluated on the development dataset.* |
+
+Considering the results above, we wanted to see how different the two presented approaches were behaving in terms of predictions and mistakes. To this end, in Fig 3 we plot the difference between:
+- the confusion matrix yielded by the GBM (Fig. 1), and
+- the confusion matrix yielded by the CNN (Fig. 2) (in this particular order).
+
+| ![alt text](/figures/development_gbm-cnn.png) |
+|:---:|
+| *Fig 3. Difference between the confusion matrixes produced by i) the GBM and ii) the CNN models (in this order), evaluated on the development dataset.* |
+
+The plot of Fig 3 can be explained as follows. Along the **main diagonal**:
+- positive numbers illustrate that the GBM model achieves more correct predictions
+- negative numbers illustrate that the CNN model achieves more correct predictions
+
+The non-zero values along the diagonal indicate that each model appears to perform better for a determined set of acoustic scenes. For instance, the GBM model performs better in some transportation modes (e.g., bus, train and tram) and in some indoor-quiet enviroments (e.g., home and library). 
+
+On the contrary, the CNN model is best performing at metro station and achieves slightly better predictions in some environmental contexts (e.g., beach and forest path) or public spaces (e.g., cafe/restaurant and grocery store). These interesting results should be further analyzed to find out why a model specializes in recogniting a specific acoustic scene. If you have an idea or wish to start a discussion about it, do not hesitate to create and issue or mail me to eduardo.fonseca@upf.edu :)
+
+Then, **off the diagonal**: 
+- positive numbers illustrate that the GBM model presents greater confusion for the pairs of acoustic scenes
+- negative numbers illustrate that the CNN model presents greater confusion for the pairs of acoustic scenes
+
+By looking at the non-zero values off the diagonal, we can now see that the models get confused between different pairs of acoustic scenes. For examples, the CNN model confuses bus with tram, whereas the GBM model confuses cafe/restaurant with grocery store.
+
+In light of the above, we can summarize saying that both models present different behaviour to some extent, i.e., they are producing a few different predictions, which may be complementary.
+
+To analyse the complementarity of both models we have done a **late fusion** of the predictions by the two models. We tried  very simple combinations of the predictions obtained by each model, namely _geometric_ and _arithmetic_ mean (no learning involved). The arithmetic mean provided the best results. The final system obtained by late fusion of the GBM and CNN attains a classification accuracy of 83.0% on the development set (outperforming the MLP baseline by 8.2%). The confusion matrix yielded by this final system can be seen in Fig 4.
+
+| ![alt text](/figures/development_fusion_mine.png) |
+|:---:|
+| *Fig 4. Confusion matrix for the final system (late fusion of GBM and CNN) evaluated on the development dataset.* |
+
 
 
 
