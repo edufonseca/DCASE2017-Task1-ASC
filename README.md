@@ -1,5 +1,14 @@
 # DCASE2017-Task1-ASC
 
+**EDIT:**
+An extension of the DCASE 2017 work has been published in the Sound and Music Computing Conference 2018: 
+
+>  E. Fonseca, R. Gong, and Xavier Serra. “A Simple Fusion of Deep and Shallow Learning for Acoustic Scene Classification” In *Proceedings of the 15th Sound and Music Computing Conference 2018*, Limassol, Cyprus.
+
+This extension includes improvements in both individual approaches (CNN and GBM) and in the late fusion method, as well as further discussion. In particular, the main improvements are due to the usage of pre-activation in the CNN, LDA feature reduction in the GBM pipeline, and learning-based late fusion. This paper is available in arxiv:
+
+https://arxiv.org/abs/1806.07506
+
 This repository supports the paper:
 
 >  E. Fonseca, R. Gong, D. Bogdanov, O. Slizovskaia, E. Gomez and Xavier Serra. “Acoustic scene classification by ensembling gradient boosting machine and convolutional neural networks” In *Proceedings of the Detection and Classification of Acoustic Scenes and Events 2017 Workshop (DCASE2017)*, Munich, Germany.
