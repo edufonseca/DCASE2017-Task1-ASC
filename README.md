@@ -5,9 +5,13 @@ An extension of the DCASE 2017 work has been published in the Sound and Music Co
 
 >  E. Fonseca, R. Gong, and Xavier Serra. “A Simple Fusion of Deep and Shallow Learning for Acoustic Scene Classification” In *Proceedings of the 15th Sound and Music Computing Conference 2018*, Limassol, Cyprus.
 
-This extension includes improvements in both individual approaches (CNN and GBM) and in the late fusion method, as well as further discussion. In particular, the main improvements are due to the usage of pre-activation in the CNN, LDA feature reduction in the GBM pipeline, and learning-based late fusion. This paper is available in arxiv:
+This extension includes improvements in both individual approaches (CNN and GBM) and in the late fusion method, as well as further discussion. In particular, the main improvements are due to the usage of pre-activation in the CNN, LDA feature reduction in the GBM pipeline, and learning-based late fusion following a _stacking_ approach. Please check the paper for more details. You can find it in arxiv:
 
 https://arxiv.org/abs/1806.07506
+
+________________________
+____________
+
 
 This repository supports the paper:
 
