@@ -7,11 +7,10 @@ An extension of the DCASE 2017 work has been published in the Sound and Music Co
 
 This extension includes improvements in both individual approaches (CNN and GBM) and in the late fusion method, as well as further discussion. In particular, the main improvements are due to the usage of pre-activation in the CNN, LDA feature reduction in the GBM pipeline, and learning-based late fusion following a _stacking_ approach. Please check the paper for more details. You can find it in arxiv:
 
-https://arxiv.org/abs/1806.07506
+<a href="https://arxiv.org/abs/1806.07506" target="_blank">https://arxiv.org/abs/1806.07506</a>
 
-________________________
-____________
-
+____________________________________
+____________________________________
 
 This repository supports the paper:
 
